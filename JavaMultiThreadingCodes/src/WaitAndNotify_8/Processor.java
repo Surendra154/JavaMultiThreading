@@ -61,7 +61,7 @@ public class Processor {
             scanner.nextLine();
             System.out.println("Return key pressed.");
             notify();
-            Thread.sleep(5000);
+            Thread.sleep(5000); // this is to demonstrate that notify does not lose control of lock like wait()
             System.out.println("Consumption done.");
         }
     }
